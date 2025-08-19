@@ -1,5 +1,6 @@
 # challenge-telcomx-II-EGZ--ALURA-LATAM
 ste proyecto estudia el comportamiento de clientes de Telcom X para predecir su abandono. A partir de un proceso de extracción, transformación y análisis exploratorio de datos, se identifican los factores clave que influyen en su decisión de dejar la compañía.
+
 📝 Descripción del proyecto
 Este proyecto de ciencia de datos se centra en analizar el comportamiento de los clientes de una empresa de telecomunicaciones para comprender y predecir el abandono (churn). A través de un exhaustivo proceso de extracción, transformación y análisis exploratorio de datos (EDA), se busca identificar los factores más influyentes en la decisión de un cliente de dejar la empresa.
 
@@ -7,6 +8,7 @@ Este proyecto de ciencia de datos se centra en analizar el comportamiento de los
 Los datos utilizados para este análisis provienen de un archivo JSON que contiene información detallada sobre los clientes de TelecomX.
 
 URL del dataset: https://raw.githubusercontent.com/ingridcristh/challenge2-data-science-LATAM/refs/heads/main/TelecomX_Data.json
+
 🛠️ Metodología y procesamiento de datos
 El proceso de preparación y manipulación de datos se realizó siguiendo los siguientes pasos clave:
 
@@ -15,6 +17,7 @@ Manipulación de valores faltantes e inconsistencias: Se identificaron y elimina
 Conversión de tipos de datos: Las columnas numéricas se convirtieron al tipo de dato apropiado (float), y las variables categóricas 'Yes'/'No' se transformaron a formato binario (1/0).
 Generación de nueva columna: Se creó una nueva columna, 'Cuentas_Diarias', para un análisis posterior más detallado de los costos, calculada como 'CargosMensuales' / 30.
 Estandarización y traducción: Las columnas y sus valores absolutos fueron renombrados y traducidos del inglés al español para mayor claridad y consistencia en el análisis.
+
 🔍 Análisis exploratorio de datos (EDA) y hallazgos clave
 Se realizaron diversos análisis para identificar patrones e insights clave relacionados con el abandono de clientes. Los hallazgos más relevantes son:
 
@@ -24,12 +27,14 @@ Pagos y antigüedad: Un bajo valor en la interacción (CargosMensuales_por_Meses
 Servicio de internet y método de pago: Aquellos que utilizan fibra óptica y el pago con cheque electrónico están asociados con alta evasión.
 Demografía y servicios complementarios: Clientes de la tercera edad, solteros sin dependientes, y aquellos sin servicios adicionales de internet, tienen más probabilidades de cancelar.
 Facturación: Los clientes que reciben la factura de en formato electrónico se asocia a una mayor tasa de churn.
+
 ⚙️ Dependencias
 Para ejecutar este proyecto, necesitarás las siguientes librerías de Python:
 
 requests
 pandas
 plotly.express
+
 🚀 Cómo ejecutar el proyecto
 El proyecto está diseñado como un notebook de Colab, lo que facilita su ejecución en el entorno de Google Colaboratory.
 
